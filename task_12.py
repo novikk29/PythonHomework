@@ -6,9 +6,16 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-import math
-s = (int(input('введите сумму чисел x и y: ')))
-p = (int(input('введите произведение чисел x и y: ')))
-x = (s - math.sqrt(s**2-4*p))/2
-y = s - x
-print(f'x={int(x)}, y={int(y)}')
+# import math
+# s = (int(input('введите сумму чисел x и y: ')))
+# p = (int(input('введите произведение чисел x и y: ')))
+# x = (s - math.sqrt(s**2-4*p))/2
+# y = s - x
+# print(f'x={int(x)}, y={int(y)}')
+
+x = int(input())
+y = int(input())
+for i in range(x):
+    for j in range(y):
+        if x == i + j and y == i * j:
+            print(i, j)

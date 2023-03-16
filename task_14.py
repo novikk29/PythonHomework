@@ -4,6 +4,6 @@
 
 n = int(input('введите число n: '))
 k = 0
-while k**2 < n:
+while 2**k < n:
     print(2**k)
     k += 1
