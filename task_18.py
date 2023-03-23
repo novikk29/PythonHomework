@@ -12,16 +12,18 @@ from random import randint
 n = int(input("Введите количество элементов: "))
 x = int(input("Введите число X: "))
 print()
-list_1 = [randint(1, 10) for _ in range(n)]
+list_1 = [randint(1, 100) for _ in range(n)]
 print(list_1)
 print()
 print('x =', x)
 print()
 list_1 = sorted(list_1)
-number = list_1[0]
 for i in list_1:
     if i <= x: 
         number = i
+    else:
+        number = i
+        break
 print('самый близкий по величине элемент массива к заданному числу равен', number)
 print()
 

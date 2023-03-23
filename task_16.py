@@ -12,7 +12,7 @@ from random import randint
 n = int (input("Введите количество элементов: "))
 x = int (input("Введите искомое число: "))
 counter = 0
-list_1 = [randint(1, 10) for _ in range(n)]
+list_1 = [randint(-5, 5) for _ in range(n)]
 print(list_1)
 for i in list_1:
     if i == x:
