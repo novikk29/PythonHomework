@@ -13,9 +13,19 @@
 # y = s - x
 # print(f'x={int(x)}, y={int(y)}')
 
-x = int(input())
-y = int(input())
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
-            print(i, j)
+# x = int(input())
+# y = int(input())
+# for i in range(x):
+#     for j in range(y):
+#         if x == i + j and y == i * j:
+#             print(i, j)
+
+summa = int(input('введите сумму искомых чисел: '))
+multiply = int(input('введите произведение искомых чисел: '))
+for i in range(summa // 2 + 1):
+    y = summa - i
+    if i * y == multiply:
+        print(f'x = {i} and y = {y}')
+
+    
+
