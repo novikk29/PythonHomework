@@ -9,12 +9,22 @@
 # -> 1
 
 from random import randint
-n = int (input("Введите количество элементов: "))
-x = int (input("Введите искомое число: "))
+n = int(input("Введите количество элементов: "))
+x = int(input("Введите искомое число: "))
 counter = 0
-list_1 = [randint(-5, 5) for _ in range(n)]
+list_1 = [randint(1, 100) for _ in range(n)]
 print(list_1)
 for i in list_1:
     if i == x:
         counter += 1
 print(f'число {x} встречается в массиве {counter} раз(а)')
+list2 = list_1.copy()
+counter2 = 0
+x_str = str(x)
+for num in list2:
+    num_str = str(num)
+    if x_str in num_str:
+        for elem in num_str:
+            if x_str == elem:
+                counter2 += 1
+print(f"Цифра {x} встречается в массиве {counter2} раз(а)")
