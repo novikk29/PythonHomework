@@ -18,7 +18,7 @@ from random import randint
 n = int(input('введите количество кустов: '))
 arr = list()
 for i in range(n):
-    x = randint(1, 10)
+    x = randint(1, 100)
     arr.append(x)
 print('количество ягод на кустах:', *arr)
 arr_count = list()

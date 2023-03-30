@@ -8,9 +8,13 @@
 # 3 6 9 12 15 18
 # 6 12
 
+import os
+os.system('clear')
 from random import randint
 n = int(input('введите количество элементов первого множества: '))
 m = int(input('введите количество элементов второго множества: '))
-firstSet = {randint(1, 100) for _ in range(n)}
-secondSet = {randint(1, 100) for _ in range(n)}
-print(*sorted(firstSet.intersection(secondSet)))
+firstSet = [randint(1, 10) for _ in range(n)]
+secondSet = [randint(1, 10) for _ in range(m)]
+print(firstSet)
+print(secondSet)
+print('элементы, встречающиеся в обоих наборах:', sorted(set(firstSet).intersection(set(secondSet))))
