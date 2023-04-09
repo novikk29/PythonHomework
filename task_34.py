@@ -17,8 +17,7 @@ def rhyme(verse):
     arr = []
     for phrase in verse:
         temp = list(filter(lambda simb: simb in 'уеыаоэяию', phrase))
-        summa = len(temp)
-        arr.append(summa)
+        arr.append(len(temp))
     if len(set(arr)) > 1:
         print('Пам парам')
     else:
